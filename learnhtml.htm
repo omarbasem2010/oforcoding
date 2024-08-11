@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive HTML Guide</title>
+    <link rel="stylesheet" href="learnhtml.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Comprehensive HTML Guide</h1>
+            <p>Learn HTML with detailed explanations and examples.</p>
+            <nav>
+                <ul>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#elements">HTML Elements</a></li>
+                    <li><a href="#attributes">Attributes</a></li>
+                    <li><a href="#forms">Forms</a></li>
+                    <li><a href="#media">Media</a></li>
+                    <li><a href="#styling">Styling</a></li>
+                    <li><a href="#advanced">Advanced Topics</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="content">
+        <div class="container">
+            <h2 id="introduction">1. Introduction to HTML</h2>
+            <p>HTML stands for Hypertext Markup Language. It is the standard language for creating webpages.</p>
+
+    <main>
+        <section id="html">
+            <h2>1.1 What is HTML?</h2>
+            <p>HTML stands for "HyperText Markup Language" and is used to create web pages. It is the foundation of any website on the internet.</p>
+        </section>
+
+        <section id="head">
+            <h2>1.2 The &lt;head&gt; Section</h2>
+            <p>The &lt;head&gt; section contains information that is not directly visible to users, such as metadata, titles, and stylesheet links. Example:</p>
+            <pre><code>&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+            <p>This sets the character encoding, viewport settings, and page title.</p>
+        </section>
+
+        <section id="body">
+            <h2>1.3 The &lt;body&gt; Section</h2>
+            <p>The &lt;body&gt; section contains all the visible content you see on the page, such as text, images, and headings. Example:</p>
+            <pre><code>&lt;body&gt;
+    &lt;h1&gt;Welcome to My Page&lt;/h1&gt;
+    &lt;p&gt;This is a text paragraph on the page.&lt;/p&gt;
+&lt;/body&gt;</code></pre>
+            <p>This is where the content displayed to users is placed.</p>
+        </section>
+
+        <section id="title">
+            <h2>1.4 The &lt;title&gt; Element</h2>
+            <p>The &lt;title&gt; element specifies the title of the page that appears in the browser's title bar or tab. Example:</p>
+            <pre><code>&lt;title&gt;Page Title&lt;/title&gt;</code></pre>
+            <p>This title helps users understand the content of the page and provides important information for search engines.</p>
+        </section>
+    </main>
+
+
+            <h2 id="elements">2. Basic HTML Elements</h2>
+
+            <!-- Heading -->
+            <h3>2.1 Heading</h3>
+            <p>Headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags:</p>
+            <div class="code-container">
+                <pre><code>&lt;h1&gt;This is a heading 1&lt;/h1&gt;
+&lt;h2&gt;This is a heading 2&lt;/h2&gt;
+&lt;h3&gt;This is a heading 3&lt;/h3&gt;
+&lt;h4&gt;This is a heading 4&lt;/h4&gt;
+&lt;h5&gt;This is a heading 5&lt;/h5&gt;
+&lt;h6&gt;This is a heading 6&lt;/h6&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Paragraph -->
+            <h3>2.2 Paragraph</h3>
+            <p>Paragraphs are defined with the &lt;p&gt; tag:</p>
+            <div class="code-container">
+                <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Link -->
+            <h3>2.3 Link</h3>
+            <p>Links are defined with the &lt;a&gt; tag:</p>
+            <div class="code-container">
+                <pre><code>&lt;a href="https://www.example.com"&gt;This is a link&lt;/a&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Image -->
+            <h3>2.4 Image</h3>
+            <p>Images are defined with the &lt;img&gt; tag:</p>
+            <div class="code-container">
+                <pre><code>&lt;img src="image.jpg" alt="Description of image"&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- List -->
+            <h3>2.5 List</h3>
+            <p>HTML supports ordered and unordered lists:</p>
+            <div class="code-container">
+                <pre><code>&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;First item&lt;/li&gt;
+  &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Table -->
+            <h3>2.6 Table</h3>
+            <p>Tables are defined with the &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; tags:</p>
+            <div class="code-container">
+                <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Cell 1&lt;/td&gt;
+    &lt;td&gt;Cell 2&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Form -->
+            <h3>2.7 Form</h3>
+            <p>Forms are defined with the &lt;form&gt; tag and include various input types:</p>
+            <div class="code-container">
+                <pre><code>&lt;form&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;
+
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email"&gt;
+
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Div and Span -->
+            <h3>2.8 Div and Span</h3>
+            <p>Use &lt;div&gt; for block-level grouping and &lt;span&gt; for inline grouping:</p>
+            <div class="code-container">
+                <pre><code>&lt;div&gt;This is a block-level container.&lt;/div&gt;
+&lt;span&gt;This is an inline container.&lt;/span&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Semantic HTML -->
+            <h3>2.9 Semantic HTML</h3>
+            <p>Semantic HTML elements provide meaning to the structure of a web page:</p>
+            <div class="code-container">
+                <pre><code>&lt;header&gt;Header content&lt;/header&gt;
+&lt;nav&gt;Navigation links&lt;/nav&gt;
+&lt;main&gt;Main content&lt;/main&gt;
+&lt;footer&gt;Footer content&lt;/footer&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Media -->
+            <h3>2.10 Media</h3>
+            <p>Adding videos and audio to your page:</p>
+            <div class="code-container">
+                <pre><code>&lt;video width="320" height="240" controls&gt;
+  &lt;source src="movie.mp4" type="video/mp4"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+
+&lt;audio controls&gt;
+  &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+  Your browser does not support the audio element.
+&lt;/audio&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Additional Elements -->
+            <h2 id="attributes">3. HTML Attributes</h2>
+
+            <!-- Class and ID -->
+            <h3>3.1 Class and ID</h3>
+            <p>Classes and IDs are used for styling:</p>
+            <div class="code-container">
+                <pre><code>&lt;div class="my-class"&gt;Content&lt;/div&gt;
+&lt;div id="my-id"&gt;Content&lt;/div&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Style Attribute -->
+            <h3>3.2 Style Attribute</h3>
+            <p>The &lt;style&gt; attribute is used for inline CSS:</p>
+            <div class="code-container">
+                <pre><code>&lt;p style="color: red;"&gt;This is a red paragraph.&lt;/p&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Target Attribute -->
+            <h3>3.3 Target Attribute</h3>
+            <p>The &lt;target&gt; attribute specifies where to open the linked document:</p>
+            <div class="code-container">
+                <pre><code>&lt;a href="https://www.example.com" target="_blank"&gt;Open in a new tab&lt;/a&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Placeholder Attribute -->
+            <h3>3.4 Placeholder Attribute</h3>
+            <p>The &lt;placeholder&gt; attribute provides a hint within an input field:</p>
+            <div class="code-container">
+                <pre><code>&lt;input type="text" placeholder="Enter your name"&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Required Attribute -->
+            <h3>3.5 Required Attribute</h3>
+            <p>The &lt;required&gt; attribute forces users to fill out the field:</p>
+            <div class="code-container">
+                <pre><code>&lt;input type="text" required&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Multiple Attribute -->
+            <h3>3.6 Multiple Attribute</h3>
+            <p>The &lt;multiple&gt; attribute allows multiple file selections:</p>
+            <div class="code-container">
+                <pre><code>&lt;input type="file" multiple&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Action Attribute -->
+            <h3>3.7 Action Attribute</h3>
+            <p>The &lt;action&gt; attribute specifies where to send form data:</p>
+            <div class="code-container">
+                <pre><code>&lt;form action="submit.php"&gt;&lt;/form&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Method Attribute -->
+            <h3>3.8 Method Attribute</h3>
+            <p>The &lt;method&gt; attribute specifies the HTTP method to use:</p>
+            <div class="code-container">
+                <pre><code>&lt;form method="post"&gt;&lt;/form&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Enctype Attribute -->
+            <h3>3.9 Enctype Attribute</h3>
+            <p>The &lt;enctype&gt; attribute specifies how form data is encoded:</p>
+            <div class="code-container">
+                <pre><code>&lt;form enctype="multipart/form-data"&gt;&lt;/form&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Value Attribute -->
+            <h3>3.10 Value Attribute</h3>
+            <p>The &lt;value&gt; attribute specifies the value of an input:</p>
+            <div class="code-container">
+                <pre><code>&lt;input type="text" value="Default text"&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <h2 id="forms">4. HTML Forms</h2>
+
+            <!-- Input Types -->
+            <h3>4.1 Text Input</h3>
+            <p>The &lt;input&gt; tag with type="text" creates a single-line text input:</p>
+            <div class="code-container">
+                <pre><code>&lt;input type="text"&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Password Input -->
+            <h3>4.2 Password Input</h3>
+            <p>The &lt;input&gt; tag with type="password" creates a password field:</p>
+            <div class="code-container">
+                <pre><code>&lt;input type="password"&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Checkbox Input -->
+            <h3>4.3 Checkbox Input</h3>
+            <p>The &lt;input&gt; tag with type="checkbox" creates a checkbox:</p>
+            <div class="code-container">
+                <pre><code>&lt;input type="checkbox"&gt; Check me</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Radio Input -->
+            <h3>4.4 Radio Input</h3>
+            <p>The &lt;input&gt; tag with type="radio" creates a radio button:</p>
+            <div class="code-container">
+                <pre><code>&lt;input type="radio" name="group" value="option1"&gt; Option 1&lt;br&gt;
+&lt;input type="radio" name="group" value="option2"&gt; Option 2</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Textarea -->
+            <h3>4.5 Textarea</h3>
+            <p>The &lt;textarea&gt; tag defines a multi-line text input:</p>
+            <div class="code-container">
+                <pre><code>&lt;textarea rows="4" cols="50"&gt;Default text&lt;/textarea&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Select Box -->
+            <h3>4.6 Select Box</h3>
+            <p>The &lt;select&gt; tag creates a dropdown list:</p>
+            <div class="code-container">
+                <pre><code>&lt;select&gt;
+  &lt;option value="1"&gt;Option 1&lt;/option&gt;
+  &lt;option value="2"&gt;Option 2&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Button -->
+            <h3>4.7 Button</h3>
+            <p>The &lt;button&gt; tag creates a clickable button:</p>
+            <div class="code-container">
+                <pre><code>&lt;button type="button"&gt;Click me&lt;/button&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Fieldset -->
+            <h3>4.8 Fieldset</h3>
+            <p>The &lt;fieldset&gt; tag groups related elements:</p>
+            <div class="code-container">
+                <pre><code>&lt;fieldset&gt;
+  &lt;legend&gt;Personal Information&lt;/legend&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name"&gt;
+&lt;/fieldset&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Legend -->
+            <h3>4.9 Legend</h3>
+            <p>The &lt;legend&gt; tag represents a caption for a &lt;fieldset&gt;:</p>
+            <div class="code-container">
+                <pre><code>&lt;fieldset&gt;
+  &lt;legend&gt;Details&lt;/legend&gt;
+  &lt;input type="text"&gt;
+&lt;/fieldset&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <h2 id="media">5. Media Elements</h2>
+
+            <!-- Video -->
+            <h3>5.1 Video</h3>
+            <p>The &lt;video&gt; tag embeds a video:</p>
+            <div class="code-container">
+                <pre><code>&lt;video width="320" height="240" controls&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Audio -->
+            <h3>5.2 Audio</h3>
+            <p>The &lt;audio&gt; tag embeds an audio file:</p>
+            <div class="code-container">
+                <pre><code>&lt;audio controls&gt;
+  &lt;source src="audio.mp3" type="audio/mp3"&gt;
+  Your browser does not support the audio element.
+&lt;/audio&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Iframe -->
+            <h3>5.3 Iframe</h3>
+            <p>The &lt;iframe&gt; tag defines an inline frame:</p>
+            <div class="code-container">
+                <pre><code>&lt;iframe src="https://www.example.com" width="600" height="400"&gt;&lt;/iframe&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <h2 id="styling">6. Styling HTML</h2>
+
+            <!-- Inline CSS -->
+            <h3>6.1 Inline CSS</h3>
+            <p>Inline styles use the &lt;style&gt; attribute:</p>
+            <div class="code-container">
+                <pre><code>&lt;p style="color: blue; font-size: 20px;"&gt;Styled text&lt;/p&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Internal CSS -->
+            <h3>6.2 Internal CSS</h3>
+            <p>Internal styles are defined within &lt;style&gt; tags in the head:</p>
+            <div class="code-container">
+                <pre><code>&lt;style&gt;
+  p { color: green; font-size: 18px; }
+&lt;/style&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- External CSS -->
+            <h3>6.3 External CSS</h3>
+            <p>External styles are defined in a separate .css file:</p>
+            <div class="code-container">
+                <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Color -->
+            <h3>6.4 Color</h3>
+            <p>Change text color using CSS:</p>
+            <div class="code-container">
+                <pre><code>p { color: red; }</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Font Size -->
+            <h3>6.5 Font Size</h3>
+            <p>Change font size using CSS:</p>
+            <div class="code-container">
+                <pre><code>p { font-size: 20px; }</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Font Weight -->
+            <h3>6.6 Font Weight</h3>
+            <p>Make text bold using CSS:</p>
+            <div class="code-container">
+                <pre><code>p { font-weight: bold; }</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Font Style -->
+            <h3>6.7 Font Style</h3>
+            <p>Make text italic using CSS:</p>
+            <div class="code-container">
+                <pre><code>p { font-style: italic; }</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Text Decoration -->
+            <h3>6.8 Text Decoration</h3>
+            <p>Apply underline, overline, or line-through:</p>
+            <div class="code-container">
+                <pre><code>p { text-decoration: underline; }</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Text Align -->
+            <h3>6.9 Text Align</h3>
+            <p>Align text to left, right, or center:</p>
+            <div class="code-container">
+                <pre><code>p { text-align: center; }</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Background Color -->
+            <h3>6.10 Background Color</h3>
+            <p>Set background color for elements:</p>
+            <div class="code-container">
+                <pre><code>div { background-color: lightgrey; }</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Margin -->
+            <h3>6.11 Margin</h3>
+            <p>Add space outside an element:</p>
+            <div class="code-container">
+                <pre><code>div { margin: 20px; }</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Padding -->
+            <h3>6.12 Padding</h3>
+            <p>Add space inside an element:</p>
+            <div class="code-container">
+                <pre><code>div { padding: 20px; }</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Border -->
+            <h3>6.13 Border</h3>
+            <p>Add border to an element:</p>
+            <div class="code-container">
+                <pre><code>div { border: 2px solid black; }</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Border Radius -->
+            <h3>6.14 Border Radius</h3>
+            <p>Round the corners of an element:</p>
+            <div class="code-container">
+                <pre><code>div { border-radius: 10px; }</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Display -->
+            <h3>6.15 Display</h3>
+            <p>Control the display of elements:</p>
+            <div class="code-container">
+                <pre><code>div { display: none; }</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Flexbox -->
+            <h3>6.16 Flexbox</h3>
+            <p>Use Flexbox to create flexible layouts:</p>
+            <div class="code-container">
+                <pre><code>div { display: flex; justify-content: center; }</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Grid -->
+            <h3>6.17 Grid</h3>
+            <p>Create a grid layout using CSS Grid:</p>
+            <div class="code-container">
+                <pre><code>div { display: grid; grid-template-columns: 1fr 1fr; }</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Box Shadow -->
+            <h3>6.18 Box Shadow</h3>
+            <p>Add shadow to elements:</p>
+            <div class="code-container">
+                <pre><code>div { box-shadow: 5px 5px 10px grey; }</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Text Shadow -->
+            <h3>6.19 Text Shadow</h3>
+            <p>Add shadow to text:</p>
+            <div class="code-container">
+                <pre><code>p { text-shadow: 2px 2px 5px grey; }</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Font Family -->
+            <h3>6.20 Font Family</h3>
+            <p>Change the font of text:</p>
+            <div class="code-container">
+                <pre><code>p { font-family: Arial, sans-serif; }</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Line Height -->
+            <h3>6.21 Line Height</h3>
+            <p>Adjust the line height of text:</p>
+            <div class="code-container">
+                <pre><code>p { line-height: 1.5; }</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Text Transform -->
+            <h3>6.22 Text Transform</h3>
+            <p>Control text capitalization:</p>
+            <div class="code-container">
+                <pre><code>p { text-transform: uppercase; }</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- White Space -->
+            <h3>6.23 White Space</h3>
+            <p>Control whitespace handling:</p>
+            <div class="code-container">
+                <pre><code>p { white-space: nowrap; }</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Overflow -->
+            <h3>6.24 Overflow</h3>
+            <p>Control overflow content handling:</p>
+            <div class="code-container">
+                <pre><code>div { overflow: auto; }</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Visibility -->
+            <h3>6.25 Visibility</h3>
+            <p>Control element visibility:</p>
+            <div class="code-container">
+                <pre><code>div { visibility: hidden; }</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <h2 id="advanced">7. Advanced HTML & CSS</h2>
+
+            <!-- Media Queries -->
+            <h3>7.1 Media Queries</h3>
+            <p>Apply styles based on viewport size:</p>
+            <div class="code-container">
+                <pre><code>@media (max-width: 600px) {
+  body { background-color: lightblue; }
+}</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- CSS Variables -->
+            <h3>7.2 CSS Variables</h3>
+            <p>Define and use CSS variables:</p>
+            <div class="code-container">
+                <pre><code>:root {
+  --main-bg-color: coral;
+}
+body { background-color: var(--main-bg-color); }</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Custom Fonts -->
+            <h3>7.3 Custom Fonts</h3>
+            <p>Include custom fonts using @font-face:</p>
+            <div class="code-container">
+                <pre><code>@font-face {
+  font-family: 'CustomFont';
+  src: url('custom-font.woff2') format('woff2');
+}
+body { font-family: 'CustomFont', sans-serif; }</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Flexbox Alignment -->
+            <h3>7.4 Flexbox Alignment</h3>
+            <p>Align items using Flexbox:</p>
+            <div class="code-container">
+                <pre><code>div { display: flex; align-items: center; justify-content: space-between; }</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- Grid Layout -->
+            <h3>7.5 Grid Layout</h3>
+            <p>Define grid areas and positions:</p>
+            <div class="code-container">
+                <pre><code>.container {
+  display: grid;
+  grid-template-areas: "header header"
+                       "sidebar content"
+                       "footer footer";
+}
+.header { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.content { grid-area: content; }
+.footer { grid-area: footer; }</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <h2 id="resources">8. Resources</h2>
+
+            <!-- W3Schools -->
+            <h3>8.1 W3Schools</h3>
+            <p>W3Schools offers comprehensive tutorials and references:</p>
+            <div class="code-container">
+                <pre><code>Visit <a href="https://www.w3schools.com" target="_blank">W3Schools</a> for more information.</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- MDN Web Docs -->
+            <h3>8.2 MDN Web Docs</h3>
+            <p>MDN provides detailed documentation and guides:</p>
+            <div class="code-container">
+                <pre><code>Visit <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a> for more information.</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+            <!-- CSS-Tricks -->
+            <h3>8.3 CSS-Tricks</h3>
+            <p>CSS-Tricks offers tips and techniques for CSS:</p>
+            <div class="code-container">
+                <pre><code>Visit <a href="https://css-tricks.com" target="_blank">CSS-Tricks</a> for more information.</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+
+        </main>
+    </div>
+</body>
+</html>
